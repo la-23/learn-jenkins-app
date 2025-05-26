@@ -47,8 +47,8 @@ pipeline {
             }
             steps{
                 sh """
-                    npm install -g serve
-                    serve -s build
+                    npm install serve
+                    /home/kali/learn-jenkins-app/node_modules/.bin/serve -s build
                     npx playwright test   
                 """
             }
